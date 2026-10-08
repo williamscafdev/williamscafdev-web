@@ -1,7 +1,7 @@
 # williamscafdev-web
 
 The personal site at **https://williamscafdev.com** — Williams M. Torres, software developer in Lima.
-Static HTML/CSS with a few lines of JavaScript, served by nginx, deployed on Coolify.
+Static HTML and CSS, no JavaScript, served by nginx, deployed on Coolify.
 
 ```
 site/            everything that is served (index.html, styles.css, main.js, img/, app-ads.txt …)
