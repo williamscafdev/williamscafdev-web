@@ -3,21 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Williams M. Torres</title>
-  <meta name="description" content="Williams M. Torres, desarrollador en Lima. Apps con Flutter y los servidores que hay detrás. Ahora construyo CataEduca.">
+  <title>Williams M. Torres — apps móviles y backend</title>
+  <meta name="description" content="Williams M. Torres, desarrollador en Lima. Apps con Flutter y los servidores que las sostienen. Creador de CataEduca.">
+  <meta name="theme-color" content="#0c0c0e">
   <link rel="canonical" href="https://williamscafdev.com/">
-  <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Williams M. Torres">
-  <meta property="og:description" content="Apps con Flutter y los servidores que hay detrás. Ahora construyo CataEduca.">
+  <meta property="og:description" content="Apps con Flutter y los servidores que las sostienen. Creador de CataEduca.">
   <meta property="og:url" content="https://williamscafdev.com/">
-  <meta property="og:image" content="https://williamscafdev.com/img/williams.jpg">
+  <meta property="og:image" content="https://williamscafdev.com/img/ce-historia.jpg">
   <meta property="og:locale" content="es_PE">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=2">
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=3">
 
   <script type="application/ld+json">
   {
@@ -36,105 +37,157 @@
   </script>
 </head>
 <body>
+  <header class="bar">
+    <a class="who" href="/">
+      <img src="/img/williams.jpg" width="32" height="32" alt="">
+      <span>Williams M. Torres</span>
+    </a>
+    <nav aria-label="Secciones">
+      <a href="#cataeduca">CataEduca</a>
+      <a href="#trabajo">Trabajo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
   <main>
-    <header class="intro">
-      <img class="me" src="/img/williams.jpg" width="88" height="88" alt="Foto de Williams M. Torres">
-      <h1>Williams M. Torres</h1>
-      <p class="where">Lima, Perú · <a href="https://github.com/williamscafdev">github.com/williamscafdev</a></p>
-    </header>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hello">Desarrollador en Lima, Perú</p>
+        <h1>Hago apps que la gente usa, y el servidor que las sostiene.</h1>
+        <p class="sub">
+          Flutter en el teléfono, Go o Node.js detrás, PostgreSQL debajo. Me hago cargo del
+          producto entero: desde la primera pantalla hasta el despliegue.
+        </p>
+        <p class="hero-links">
+          <a class="primary" href="#cataeduca">Ver CataEduca</a>
+          <a href="mailto:williamscafdev@gmail.com">williamscafdev@gmail.com</a>
+        </p>
+      </div>
 
-    <p class="lead">
-      Hola. Hago aplicaciones móviles con Flutter y, cada vez más, los servidores que hay
-      detrás de ellas. Me gusta llevar una idea completa hasta la tienda: la app, la API, la
-      base de datos y el servidor donde corre todo eso.
-    </p>
-
-    <section>
-      <h2>En qué estoy ahora</h2>
-      <figure class="project">
-        <a href="https://cataeduca.williamscafdev.com/" class="project-icon">
-          <img src="/img/cataeduca.png" width="96" height="96" alt="Ícono de CataEduca">
-        </a>
-        <figcaption>
-          <p>
-            <a href="https://cataeduca.williamscafdev.com/"><strong>CataEduca</strong></a> es una
-            app para que estudiantes de secundaria y preuniversitarios repasen deslizando
-            preguntas, como quien pasa videos cortos: tocas una respuesta, ves por qué estaba
-            bien o mal, y sigues. Tiene una meta diaria opcional, una liga semanal y una mascota,
-            Mica, una cuy.
-          </p>
-          <p>
-            La app está hecha en Flutter y el backend en Go, sobre PostgreSQL con pgvector. Las
-            más de 22 mil preguntas se generan por lotes en el servidor, se validan y se descartan
-            las repetidas antes de publicarse; el teléfono nunca habla con un modelo de lenguaje.
-            Corre en un servidor propio con Coolify.
-          </p>
-          <p class="links">
-            <a href="https://play.google.com/store/apps/details?id=app.cataeduca">Descargar en Google Play</a>
-            <span aria-hidden="true">·</span>
-            <a href="https://cataeduca.williamscafdev.com/">cataeduca.williamscafdev.com</a>
-          </p>
-        </figcaption>
+      <figure class="phone phone-hero">
+        <video autoplay muted loop playsinline preload="metadata" poster="/img/ce-feed-poster.jpg"
+               aria-label="CataEduca en uso: una pregunta de historia respondida correctamente">
+          <source src="/img/ce-feed.mp4" type="video/mp4">
+        </video>
       </figure>
     </section>
 
-    <section>
-      <h2>Lo que he construido para otros</h2>
-      <p>Apps y sistemas a medida para empresas, la mayoría de uso interno:</p>
-      <ul class="work">
-        <li><strong>Inventario</strong> — control de stock, avisos automáticos y reportes.</li>
-        <li><strong>Ubicación de productos en contenedores</strong> — encontrar qué está dónde en un almacén.</li>
-        <li><strong>Control de ingreso</strong> — registro de accesos y permisos.</li>
-        <li><strong>Caja y punto de venta</strong> — ventas, cierre de caja y reportes.</li>
-        <li><strong>Control de tiempos</strong> — horarios y asistencia de un equipo.</li>
-        <li><strong>E-commerce</strong> — tienda web, panel de administración y app para clientes.</li>
-        <li><strong>Exámenes en línea</strong> — banco de preguntas y calificación automática.</li>
-      </ul>
-    </section>
+    <section id="cataeduca" class="case">
+      <div class="case-head">
+        <img class="case-icon" src="/img/cataeduca.png" width="72" height="72" alt="">
+        <div>
+          <h2>CataEduca</h2>
+          <p>Repasar el colegio deslizando, como quien pasa videos cortos.</p>
+        </div>
+        <div class="case-cta">
+          <a class="primary" href="https://play.google.com/store/apps/details?id=app.cataeduca">Google Play</a>
+          <a href="https://cataeduca.williamscafdev.com/">Sitio web</a>
+        </div>
+      </div>
 
-    <section>
-      <h2>Código abierto</h2>
-      <ul class="work">
-        <li>
-          <a href="https://github.com/williamscafdev/Flutter_Example_With_Nodejs_BackEnd">Flutter_Example_With_Nodejs_BackEnd</a>
-          — la misma app escrita cuatro veces: con GetX, BLoC/Cubit, Riverpod y setState.
-        </li>
-        <li>
-          <a href="https://github.com/williamscafdev/mcp-steps">mcp-steps</a>
-          — primeros pasos con Model Context Protocol.
-        </li>
-        <li>
-          <a href="https://github.com/williamscafdev/poke_app">poke_app</a>
-          — una app de Pokémon en Flutter sobre la PokeAPI.
-        </li>
-        <li>
-          <a href="https://github.com/williamscafdev/ani_expanded_container">ani_expanded_container</a>
-          — una animación de contenedor que se expande al pasar el cursor.
-        </li>
-      </ul>
-    </section>
+      <div class="case-grid">
+        <div>
+          <h3>El problema</h3>
+          <p>
+            Los estudiantes pasan horas en el feed del teléfono y minutos repasando. Las apps de
+            estudio piden sesiones largas y se sienten como tarea.
+          </p>
+        </div>
+        <div>
+          <h3>Lo que construí</h3>
+          <p>
+            Un feed infinito de preguntas a pantalla completa: tocas, ves al instante por qué
+            estaba bien o mal, y sigues. Meta diaria opcional, liga semanal y una mascota, Mica.
+            Diseño, app Android, API, contenido y servidor.
+          </p>
+        </div>
+        <div>
+          <h3>Cómo funciona por dentro</h3>
+          <p>
+            Las preguntas se generan por lotes con un modelo de lenguaje en el servidor, se
+            validan contra un esquema y se descartan las repetidas por similitud con pgvector.
+            La app nunca llama a un modelo: lee de un banco ya revisado.
+          </p>
+        </div>
+      </div>
 
-    <section>
-      <h2>Con qué trabajo</h2>
-      <p>
-        Sobre todo Flutter y Dart. En el servidor, Go y Node.js (NestJS, Express). Bases de
-        datos PostgreSQL, MySQL, SQL Server y MongoDB. Para desplegar, Docker, Coolify y
-        Cloudflare; para la web, Vue y Astro. He integrado Firebase, Amplitude, Customer.io y
-        Sentry en apps en producción.
+      <dl class="facts">
+        <div><dt>22 mil+</dt><dd>preguntas publicadas</dd></div>
+        <div><dt>8</dt><dd>formas de responder, un solo motor de render</dd></div>
+        <div><dt>51</dt><dd>combinaciones de nivel y materia</dd></div>
+      </dl>
+
+      <div class="screens" role="list">
+        <figure class="phone" role="listitem">
+          <img src="/img/ce-historia.jpg" width="540" height="960" loading="lazy" alt="Pregunta de historia respondida: ¡Correcto! +40 XP, con la explicación">
+          <figcaption>Tocas y sabes al instante</figcaption>
+        </figure>
+        <figure class="phone" role="listitem">
+          <img src="/img/ce-clima.jpg" width="540" height="960" loading="lazy" alt="Pregunta de geografía para relacionar zonas climáticas con sus características">
+          <figcaption>Relacionar</figcaption>
+        </figure>
+        <figure class="phone" role="listitem">
+          <img src="/img/ce-orden.jpg" width="540" height="960" loading="lazy" alt="Pregunta de física para ordenar las etapas de la vida de una estrella">
+          <figcaption>Ordenar</figcaption>
+        </figure>
+        <figure class="phone" role="listitem">
+          <img src="/img/ce-bio.jpg" width="540" height="960" loading="lazy" alt="Pregunta de biología en tema claro con la explicación de la respuesta">
+          <figcaption>Siempre el porqué</figcaption>
+        </figure>
+      </div>
+
+      <p class="stackline">
+        <span>Flutter</span><span>Go</span><span>PostgreSQL + pgvector</span><span>Docker · Coolify</span><span>Cloudflare</span><span>Sentry</span>
       </p>
     </section>
 
-    <section>
-      <h2>Contacto</h2>
-      <p>
-        Si tienes un proyecto o quieres conversar, escríbeme a
-        <a href="mailto:williamscafdev@gmail.com">williamscafdev@gmail.com</a>.
-        También estoy en <a href="https://www.linkedin.com/in/williams-m-torres-92690b179">LinkedIn</a>
-        y en <a href="https://github.com/williamscafdev">GitHub</a>.
+    <section id="trabajo" class="work">
+      <h2>Para clientes</h2>
+      <p class="lead">Apps y sistemas a medida, la mayoría de uso interno en empresas.</p>
+      <ul>
+        <li><strong>Inventario</strong><span>Stock, avisos automáticos y reportes.</span></li>
+        <li><strong>Ubicación en contenedores</strong><span>Saber qué está dónde en un almacén.</span></li>
+        <li><strong>Control de ingreso</strong><span>Registro de accesos y permisos.</span></li>
+        <li><strong>Caja y punto de venta</strong><span>Ventas, cierre de caja y reportes.</span></li>
+        <li><strong>Control de tiempos</strong><span>Horarios y asistencia de un equipo.</span></li>
+        <li><strong>E-commerce</strong><span>Tienda web, panel de administración y app de clientes.</span></li>
+        <li><strong>Exámenes en línea</strong><span>Banco de preguntas y calificación automática.</span></li>
+      </ul>
+
+      <div class="two">
+        <div>
+          <h2>Código abierto</h2>
+          <ul class="plain">
+            <li><a href="https://github.com/williamscafdev/Flutter_Example_With_Nodejs_BackEnd">Flutter_Example_With_Nodejs_BackEnd</a> — la misma app con GetX, BLoC, Riverpod y setState.</li>
+            <li><a href="https://github.com/williamscafdev/mcp-steps">mcp-steps</a> — primeros pasos con Model Context Protocol.</li>
+            <li><a href="https://github.com/williamscafdev/poke_app">poke_app</a> — Flutter sobre la PokeAPI.</li>
+            <li><a href="https://github.com/williamscafdev/ani_expanded_container">ani_expanded_container</a> — animación de contenedor al pasar el cursor.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Con qué trabajo</h2>
+          <dl class="tools">
+            <div><dt>Móvil</dt><dd>Flutter, Dart, Android, iOS, Firebase</dd></div>
+            <div><dt>Backend</dt><dd>Go, Node.js, NestJS, Express</dd></div>
+            <div><dt>Datos</dt><dd>PostgreSQL, MySQL, SQL Server, MongoDB</dd></div>
+            <div><dt>Web</dt><dd>Vue, Astro, TypeScript</dd></div>
+            <div><dt>Infra</dt><dd>Docker, Coolify, Cloudflare, Google Cloud</dd></div>
+            <div><dt>Producto</dt><dd>Amplitude, Customer.io, Sentry, Figma</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>¿Tienes una app en mente?</h2>
+      <p><a class="mail" href="mailto:williamscafdev@gmail.com">williamscafdev@gmail.com</a></p>
+      <p class="elsewhere">
+        <a href="https://www.linkedin.com/in/williams-m-torres-92690b179">LinkedIn</a>
+        <a href="https://github.com/williamscafdev">GitHub</a>
       </p>
     </section>
   </main>
 
-  <footer>Actualizado en octubre de 2026.</footer>
+  <footer class="foot">© 2026 Williams M. Torres · Lima</footer>
 </body>
 </html>
