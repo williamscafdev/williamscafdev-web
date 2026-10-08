@@ -14,6 +14,11 @@ Dockerfile       nginx:1.27-alpine + site/
 All content is in `site/index.html`. Push to `main` and redeploy the `williamscafdev-web`
 resource in Coolify (project `williamscafdev`).
 
+## Cache
+
+Cloudflare caches CSS and images for a week (`nginx.conf`). After changing `styles.css` or
+`favicon.svg`, bump the `?v=` on its link in `index.html`, or the edge keeps serving the old file.
+
 ## Things that must stay
 
 - **`site/app-ads.txt`** — AdMob crawls `/app-ads.txt` on the developer website listed in
